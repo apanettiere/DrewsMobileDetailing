@@ -46,17 +46,18 @@ const Subjects = () => {
         animate="visible"
         className="grid md:grid-cols-3 sm:grid-cols-2 mt-12 gap-8"
       >
-        {services.map((service, index) => {
+        {services.map((service) => {
           const [ref, inView] = useInView({ threshold: 0.1 });
 
           return (
             <motion.div
+              key={service.id} // Moved the key prop here
               ref={ref}
               variants={item}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              <Services key={service.id} {...service} />
+              <Services {...service} />
             </motion.div>
           );
         })}

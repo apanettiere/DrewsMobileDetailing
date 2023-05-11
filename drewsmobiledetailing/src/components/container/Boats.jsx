@@ -64,17 +64,18 @@ const Boats = () => {
         whileInView="visible"
         className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8"
       >
-        {boats.map((boat, index) => {
+        {boats.map((boat) => {
           const [ref, inView] = useInView({ threshold: 0.1 });
 
           return (
             <motion.div
+              key={boat.id} // Moved the key prop here
               ref={ref}
               variants={item}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              <Services key={boat.id} {...boat} />
+              <Services {...boat} />
             </motion.div>
           );
         })}

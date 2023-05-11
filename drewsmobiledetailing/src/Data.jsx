@@ -14,8 +14,8 @@ import service5 from "./assets/service5.png";
 
 import boat1 from "./assets/boat1.png";
 import boat2 from "./assets/boat2.png";
-import boat3 from "./assets/service1.png";
-import boat4 from "./assets/service2.png";
+import boat3 from "./assets/boat3.png";
+import boat4 from "./assets/boat4.png";
 
 import image1 from "./assets/service1.png";
 import image2 from "./assets/service2.png";
