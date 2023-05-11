@@ -30,7 +30,7 @@ const Aircraft = () => {
   const [ref, inView] = useInView({ threshold: 0.1 });
 
   return (
-    <div className="bg-sky-background bg-cover bg-fixed bg-top bg-no-repeat text-white h-[600px]">
+    <div className="bg-sky-background  md:bg-cover bg-auto md:bg-fixed bg-scroll bg-top bg-no-repeat text-white h-[600px]">
       <div className="section" id="aircraft">
         <motion.div
           initial="hidden"

@@ -42,7 +42,7 @@ const InstagramGallery = () => {
 
   return (
     <div className="section" id="gallery">
-      <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5 text-center">
+      <div className="font-bold sm:text-[1.875rem] text-[1.5rem] text-center">
         <span className="text-primary">Gallery</span>
       </div>
       <Image photos={visiblePhotos} />

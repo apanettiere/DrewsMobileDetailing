@@ -21,9 +21,9 @@ const Contact = () => {
   return (
     <section
       id="free quote"
-      className="w-full min-h-screen pt-24 pb-32 flex items-center justify-center text-center"
+      className="w-full min-h-screen flex items-center justify-center text-center"
     >
-      <div className="w-full max-w-3xl p-4">
+      <div className="w-full max-w-3xl">
         <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5 text-center">
           <span className="text-primary">Contact</span>
         </div>
