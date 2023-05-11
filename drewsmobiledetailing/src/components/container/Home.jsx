@@ -20,7 +20,7 @@ const Home = () => {
     },
   };
   return (
-    <div className="bg-hero-background md:bg-cover bg-auto md:bg-fixed bg-scroll bg-top bg-no-repeat text-white">
+    <div className="bg-hero-background bg-cover  bg-scroll md:bg-fixed bg-top bg-no-repeat text-white">
       <div className="section" id="home">
         <div className="md:flex items-center justify-center">
           <motion.div
