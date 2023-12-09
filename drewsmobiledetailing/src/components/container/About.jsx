@@ -60,7 +60,21 @@ const About = () => {
               content="Drew's Mobile Detailing has a personal connection with ALL of its customers. We make sure all are your needs are satisfied with proper etiquette and manners."
             />
           </div>
+          <div className="mt-12  mb-12 max-w-[700px] mx-auto flex flex-wrap justify-center gap-8">
+            {" "}
+            {/* Adjust width as needed, and overflow-hidden is to ensure no scrollbars appear */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14321.693686419407!2d-81.7309293!3d26.182901!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db1d489cce8c47%3A0x418715c4818b3381!2sDrew's%20Mobile%20Detailing!5e0!3m2!1sen!2sus!4v1702156432398!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+
         <div className="place-items-center">
           <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5 text-center">
             Brands We Have <span className="text-primary">Detailed</span>

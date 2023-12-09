@@ -71,6 +71,7 @@ const Home = () => {
                 <BsFillTelephoneFill className="text-primary" />
                 (239)-300-1782
               </a>
+              <p className="hover:scale-110 text-white">Naples, FL</p>
               <a
                 href="https://www.facebook.com/DrewsMobileDetailing8/"
                 className="hover:scale-110 text-xl"
