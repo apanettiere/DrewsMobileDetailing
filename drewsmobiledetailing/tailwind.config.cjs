@@ -22,8 +22,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "hero-background": "url('./assets/heroBackground.png')",
-        "sky-background": "url('./assets/sky.png')",
+        "hero-background": "url('./assets/heroBackground.avif')",
+        "sky-background": "url('./assets/sky.avif')",
       },
     },
     screens: {

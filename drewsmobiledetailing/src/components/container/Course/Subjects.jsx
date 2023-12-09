@@ -2,8 +2,8 @@ import React from "react";
 import { services } from "../../../Data";
 import Services from "./Services";
 
-import ceramic from "../../../assets/ceramic.png";
-import ceramic1 from "../../../assets/ceramic1.png";
+import ceramic from "../../../assets/ceramic.avif";
+import ceramic1 from "../../../assets/ceramic1.avif";
 import ResponsiveEmbed from "react-responsive-embed";
 
 import { motion } from "framer-motion";
@@ -74,7 +74,7 @@ const Subjects = () => {
             longevity.
             <br />
             <span className="font-bold text-sm">
-              Prices: Sedan/Coup- $30 Suv/Truck- $50
+              Prices: Sedan/Coup- $45 Suv/Truck- $65
             </span>
           </div>
         </div>
@@ -133,8 +133,7 @@ const Subjects = () => {
               <br />
               <span className="font-bold text-md">Pricing: </span>
               <br />
-              One-Step Polish: Sedan- $200 SUV/Truck- $240 Two-Step Polish:
-              Sedan- $280 SUV/Truck- $340 Call or Text for boats
+              Contact for Pricing
               <br />
               *Evaluation &amp; Recommendation Upon Arrival*
             </div>

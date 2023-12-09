@@ -3,7 +3,6 @@ import {
   Home,
   About,
   Tutors,
-  Aircraft,
   Boats,
   Contact,
   Subjects,
@@ -17,7 +16,6 @@ function App() {
       <Home />
       <About />
       <Subjects />
-      <Aircraft />
       <Boats />
       <Tutors />
       <Contact />

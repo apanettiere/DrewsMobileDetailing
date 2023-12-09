@@ -6,7 +6,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import MobileNavLinks from "./MobileNavLinks";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.avif";
 import { Link } from "react-scroll";
 
 const Navbar = () => {

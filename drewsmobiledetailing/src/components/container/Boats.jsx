@@ -1,5 +1,5 @@
 import React from "react";
-import boat from "./../../assets/boat.png";
+import boat from "./../../assets/boat.avif";
 import { boats } from "../../Data";
 import Services from "./Course/Services";
 import { motion } from "framer-motion";

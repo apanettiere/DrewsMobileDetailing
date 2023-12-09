@@ -1,24 +1,23 @@
-import logo from "./assets/logo.png";
-import logo1 from "./assets/logo1.png";
-import logo2 from "./assets/logo2.png";
-import logo3 from "./assets/logo3.png";
-import logo4 from "./assets/logo4.png";
-import logo5 from "./assets/logo5.png";
-import logo6 from "./assets/logo6.png";
+import logo from "./assets/logo.avif";
+import logo1 from "./assets/logo1.avif";
+import logo2 from "./assets/logo2.avif";
+import logo3 from "./assets/logo3.avif";
+import logo4 from "./assets/logo4.avif";
+import logo5 from "./assets/logo5.avif";
+import logo6 from "./assets/logo6.avif";
 
-import service1 from "./assets/service1.png";
-import service2 from "./assets/service2.png";
-import service3 from "./assets/service3.png";
-import service4 from "./assets/service4.png";
-import service5 from "./assets/service5.png";
+import service1 from "./assets/service1.avif";
+import service2 from "./assets/service2.avif";
+import service3 from "./assets/service3.avif";
+import service4 from "./assets/service4.avif";
+import service5 from "./assets/service5.avif";
 
-import boat1 from "./assets/boat1.png";
-import boat2 from "./assets/boat2.png";
-import boat3 from "./assets/boat3.png";
-import boat4 from "./assets/boat4.png";
+import boat1 from "./assets/boat1.avif";
+import boat2 from "./assets/boat2.avif";
+import boat3 from "./assets/boat3.avif";
 
-import image1 from "./assets/service1.png";
-import image2 from "./assets/service2.png";
+import image1 from "./assets/service1.avif";
+import image2 from "./assets/service2.avif";
 
 export const navlogo = [logo];
 
@@ -35,21 +34,16 @@ export const navLinks = [
   },
   {
     id: 4,
-    href: "aircraft",
-    link: "Aircraft",
-  },
-  {
-    id: 5,
     href: "boats",
     link: "Boats",
   },
   {
-    id: 6,
+    id: 5,
     href: "gallery",
     link: "Gallery",
   },
   {
-    id: 7,
+    id: 6,
     href: "free quote",
     link: "Free Quote",
   },
@@ -66,11 +60,11 @@ export const services = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          Sedans- $135
+          Sedans- $150
           <br />
-          SUV/Pickup Truck- $165
+          SUV/Pickup Truck- $175
           <br />
-          Large/Work trucks- $180-220
+          Large/Work trucks- $200-240
         </span>
       </p>
     ),
@@ -105,11 +99,11 @@ export const services = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          Sedans- $175
+          Sedans- $195
           <br />
-          SUV/Pickup Truck- $195
+          SUV/Pickup Truck- $220
           <br />
-          Large/Work trucks- $215-285
+          Large/Work trucks- $240-300
         </span>
       </p>
     ),
@@ -148,11 +142,11 @@ export const services = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          Sedans- $135
+          Sedans- $150
           <br />
-          SUV/Pickup Truck- $165
+          SUV/Pickup Truck- $175
           <br />
-          Large/Work trucks- $185
+          Large/Work trucks- $200-240
         </span>
       </p>
     ),
@@ -182,11 +176,11 @@ export const services = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          Sedans- $240
+          Sedans- $260
           <br />
-          SUV/Pickup Truck- $260
+          SUV/Pickup Truck- $285
           <br />
-          Large/Work trucks- $280-400
+          Large/Work trucks- $300-400
         </span>
       </p>
     ),
@@ -224,9 +218,11 @@ export const services = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          Sedans- $175
+          Sedans- $195
           <br />
-          SUV/Pickup Truck- $195 *$30 extra for shampooing carpets/seats*
+          SUV/Pickup Truck- $220
+          <br />
+          Large/Work trucks- $240-300
         </span>
       </p>
     ),
@@ -271,7 +267,7 @@ export const boats = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          $13/Foot
+          $14/Foot
         </span>
       </p>
     ),
@@ -301,7 +297,7 @@ export const boats = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          $32/Foot
+          $32-40/Foot
         </span>
       </p>
     ),
@@ -323,7 +319,7 @@ export const boats = [
         <span className="font-bold text-sm">
           Pricing:
           <br />
-          $18/Foot
+          $20/Foot
         </span>
       </p>
     ),
@@ -334,30 +330,6 @@ export const boats = [
         -Ceramic wax on hull and topside (waterline up if in water)
         <br />
         -Wax will last 4-5 months in exposed conditions
-      </p>
-    ),
-  },
-  {
-    id: 4,
-    image: [boat4],
-    title: (
-      <p>
-        Polish and Wax Exterior only
-        <br />
-        <span className="font-bold text-sm">
-          Pricing:
-          <br />
-          $32/Foot
-        </span>
-      </p>
-    ),
-    content: (
-      <p>
-        -Complete wash (waterline up if in water)
-        <br />
-        -Will polish hull
-        <br />
-        -Finish off with a ceramic wax
       </p>
     ),
   },

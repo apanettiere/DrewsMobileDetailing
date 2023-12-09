@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "../../assets/hero.png";
+import hero from "../../assets/hero.avif";
 import { motion } from "framer-motion";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { BsFillTelephoneFill } from "react-icons/bs";
