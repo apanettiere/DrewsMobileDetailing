@@ -180,6 +180,7 @@ const Subjects = () => {
         </div>
         <div className="w-full sm:w-3/4 md:w-3/5 mx-auto mt-6">
           <ResponsiveEmbed
+            title="Ceramic X Youtube Video"
             ratio="16:9"
             src="https://www.youtube.com/embed/AWEx_ChGtV4"
           />
