@@ -4,6 +4,8 @@ import Services from "./Services";
 
 import ceramic from "../../../assets/ceramic.avif";
 import ceramic1 from "../../../assets/ceramic1.avif";
+import auto from "../../../assets/auto.pdf";
+import marine from "../../../assets/marine.pdf";
 import ResponsiveEmbed from "react-responsive-embed";
 
 import { motion } from "framer-motion";
@@ -177,6 +179,22 @@ const Subjects = () => {
               </>
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-col items-center w-full mt-6">
+          {/* Display the 'auto' PDF */}
+          <embed
+            className="w-full h-[75vh]" // 75% of the viewport height
+            src={auto} // The source of your 'auto' PDF
+            type="application/pdf"
+          />
+
+          {/* Display the 'marine' PDF */}
+          <embed
+            className="w-full h-[75vh]" // 75% of the viewport height
+            src={marine} // The source of your 'marine' PDF
+            type="application/pdf"
+          />
         </div>
         <div className="w-full sm:w-3/4 md:w-3/5 mx-auto mt-6">
           <ResponsiveEmbed

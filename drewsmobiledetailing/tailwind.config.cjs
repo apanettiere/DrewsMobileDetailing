@@ -7,9 +7,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#025acc",
+        primary: "#00b8ff",
         primaryText: "#6DAFFE",
-        Solitude: "#EDF6FF",
+        Solitude: "#f5f8fa",
         gray: "#4B4B4C",
       },
       animation: {
