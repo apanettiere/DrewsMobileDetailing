@@ -1,6 +1,7 @@
 import React from "react";
 import boat from "./../../assets/boat.avif";
 import { boats } from "../../Data";
+import marine from "./../../assets/marine.pdf";
 import Services from "./Course/Services";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -51,6 +52,14 @@ const Boats = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center w-full mt-6 mb-6">
+        {/* Display the 'marine' PDF */}
+        <embed
+          className="w-full h-[75vh]" // 75% of the viewport height
+          src={marine} // The source of your 'marine' PDF
+          type="application/pdf"
+        />
       </div>
       <div className="text-center">
         <div className="sm:text-3xl text-2xl font-bold mb-5">
