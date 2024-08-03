@@ -27,9 +27,6 @@ const Services = ({ image, title, content }) => {
       className="flex items-center flex-col gap-4 bg-white p-8 rounded-md"
     >
       <div>
-        <img src={image} alt={title} />
-      </div>
-      <div>
         <div className="font-bold text-lg mb-2">{title}</div>
         <div className="text-sm leading-7">{content}</div>
       </div>

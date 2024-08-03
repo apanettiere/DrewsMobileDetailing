@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Image from "./Image";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const InstagramGallery = () => {
-  const [photos, setPhotos] = useState([]);
-  const [visiblePhotos, setVisiblePhotos] = useState([]);
-  const [nextUrl, setNextUrl] = useState(null);
-  const [currentCount, setCurrentCount] = useState(6);
-
-  const initialCount = 6;
+  const [images, setImages] = useState([]);
 
   const fetchPhotos = async (url) => {
     try {
@@ -16,8 +12,13 @@ const InstagramGallery = () => {
       const filteredData = data.data.filter(
         (photo) => photo.media_type === "IMAGE"
       );
-      setPhotos(filteredData);
-      setNextUrl(data.paging.next);
+
+      const formattedImages = filteredData.map((photo) => ({
+        original: photo.media_url,
+        thumbnail: photo.media_url,
+      }));
+
+      setImages(formattedImages);
     } catch (error) {
       console.error("Error fetching photos:", error);
     }
@@ -25,36 +26,24 @@ const InstagramGallery = () => {
 
   useEffect(() => {
     const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
-    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=${initialCount}&access_token=${accessToken}`;
+    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${accessToken}`;
     fetchPhotos(url);
   }, []);
 
-  useEffect(() => {
-    setVisiblePhotos(photos.slice(0, currentCount));
-  }, [photos, currentCount]);
-
-  const loadMore = () => {
-    if (nextUrl) {
-      setCurrentCount((prevCount) => prevCount + initialCount);
-      fetchPhotos(nextUrl);
-    }
-  };
-
   return (
-    <div className="section" id="gallery">
-      <div className="font-bold sm:text-[1.875rem] text-[1.5rem] text-center">
-        <span className="text-primary">Gallery</span>
+    <section
+      id="gallery"
+      
+    >
+      <div className="p-8">
+        <div className="font-bold sm:text-[1.875rem] text-[1.5rem] mb-5 text-center">
+          <span className="text-primary">Gallery</span>
+        </div>
+        <article>
+          <ImageGallery items={images} />
+        </article>
       </div>
-      <Image photos={visiblePhotos} />
-      {nextUrl && (
-        <button
-          onClick={loadMore}
-          className="bg-primary text-white font-bold py-2 px-4 rounded"
-        >
-          Load More
-        </button>
-      )}
-    </div>
+    </section>
   );
 };
 

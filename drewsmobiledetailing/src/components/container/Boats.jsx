@@ -53,7 +53,7 @@ const Boats = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full mt-6 mb-6">
+      <div className="flex flex-col items-center w-full mt-6 mb-8">
         {/* Display the 'marine' PDF */}
         <embed
           className="w-full h-[75vh]" // 75% of the viewport height
