@@ -3,6 +3,8 @@ Overview
 Drew's Mobile Detailing is a fully responsive, user-friendly website designed and developed to promote and facilitate booking services for a mobile car detailing business. 
 The website was built with a focus on modern design principles, smooth animations, and cross-browser compatibility to deliver an exceptional user experience.
 
+[![Project 1 Video](https://img.youtube.com/vi/jmoW7ABUB7U/0.jpg)](https://youtu.be/jmoW7ABUB7U)
+
 Project Duration
 May 2023 – Present
 
